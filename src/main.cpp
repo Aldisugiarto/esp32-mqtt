@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
+#include "calc/timeout.h"
 
 const char* ssid = "your-wifi-ssid";
 const char* password = "your-wifi-password";
@@ -45,6 +46,7 @@ void setup() {
   Serial.begin(115200);
   setup_wifi();
   client.setServer(mqtt_server, 1883);
+  add_timeout(20, 20);
 }
 
 void loop() {
