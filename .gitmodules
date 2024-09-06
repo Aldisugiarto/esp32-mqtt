@@ -1,0 +1,3 @@
+[submodule "lib/esp32-mqtt-lib"]
+	path = lib/esp32-mqtt-lib
+	url = https://github.com/Aldisugiarto/esp32-mqtt-lib.git
